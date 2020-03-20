@@ -7,3 +7,6 @@ Implementation of some well-known algorithms.
 3. Greedy method
 4. Dynamic programming
 5. Branch and bound
+
+## Language
+JAVA 8
