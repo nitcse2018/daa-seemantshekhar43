@@ -1,4 +1,4 @@
-# DAA Assignment 
+# DAA Assignment (algo)
 Implementation of some well-known algorithms. 
 
 ## Topics 
@@ -12,7 +12,7 @@ Implementation of some well-known algorithms.
 JAVA 
 
 
-# Resume Builder
+# Resume Builder (Builder)
 Builder is a Java application built for the JAVAFX community. This application aims to generate Resume (.pdf) based on the response provided.
 
 ## How to Run Builder
