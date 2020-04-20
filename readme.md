@@ -46,3 +46,9 @@ For Linux:
  ```java
       builder.bat 
  ```
+ 
+ ## Screenshots
+ ![Screenshot_1](screenshots/ss1.png?raw=true)
+ ![Screenshot_2](screenshots/ss2.png?raw=true)
+
+ 
