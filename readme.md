@@ -15,6 +15,11 @@ JAVA
 # Resume Builder (Builder)
 Builder is a Java application built for the JAVAFX community. This application aims to generate Resume (.pdf) based on the response provided.
 
+## Technology tools/components used
+- JAVA
+- JAVAFX
+- Jlink
+
 ## How to Run Builder
 1. Clone the project
 2. BUild the project in IDE(IntelliJ preferred).
