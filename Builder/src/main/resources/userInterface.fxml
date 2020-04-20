@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.shape.Line?>
+<?import com.jfoenix.controls.JFXButton?>
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.seemantshekhar.Controller"
+            prefHeight="800.0" prefWidth="1200.0">
+
+    <children>
+
+        <AnchorPane  prefHeight="800.0" prefWidth="300.0" style="-fx-background-color: #0747ab;">
+            <children>
+                <JFXButton fx:id="btnPersonalInfo"  onAction="#nextToPersonal" layoutX="75.0" layoutY="300.0" prefHeight="40.0" prefWidth="150.0" style="-fx-background-color: #0747ab;" text="Personal Info" textFill="WHITE">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </JFXButton>
+                <JFXButton fx:id="btnSkills" onAction="#nextToSkills" layoutX="75.0" layoutY="454.0" prefHeight="40.0" prefWidth="200.0" style="-fx-background-color: #0747ab;" text="Skills &amp; Experience" textFill="WHITE">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </JFXButton>
+                <JFXButton fx:id="btnQualification" onAction="#nextToQualification" layoutX="75.0" layoutY="380.0" prefHeight="40.0" prefWidth="150.0" style="-fx-background-color: #0747ab;" text="Qualification" textFill="WHITE">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </JFXButton>
+                <Label layoutX="55.0" layoutY="71.0" text="Resume Builder" textFill="WHITE">
+                    <font>
+                        <Font size="24.0" />
+                    </font>
+                </Label>
+                <Label layoutX="102.0" layoutY="749.0" text="Version  1.0" textFill="WHITE">
+                    <font>
+                        <Font size="16.0" />
+                    </font>
+                </Label>
+            </children>
+        </AnchorPane>
+        <AnchorPane fx:id="personalPane" layoutX="300.0" prefHeight="800.0" prefWidth="900.0">
+            <children>
+
+                <Label fx:id="exitLabel" layoutX="820.0" layoutY="40.0" text="Exit" onMouseClicked="#exit" textFill="#164e98">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </Label>
+                <Label fx:id="errorPersonalLabel" layoutX="119.0" layoutY="170.0" textFill="#f81a31">
+                    <font>
+                        <Font name="System" size="20.0" />
+                    </font>
+                </Label>
+                <JFXTextField fx:id="firstNameText" focusTraversable="false" labelFloat="true" layoutX="120.0" layoutY="216.0" prefHeight="50.0" prefWidth="250.0" promptText="First Name" unFocusColor="BLACK">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </JFXTextField>
+                <JFXTextField fx:id="lastNameText" focusTraversable="false" labelFloat="true" layoutX="513.0" layoutY="216.0" prefHeight="50.0" prefWidth="250.0" promptText="Last Name" unFocusColor="BLACK">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </JFXTextField>
+                <JFXTextField fx:id="emailText" focusTraversable="false" labelFloat="true" layoutX="120.0" layoutY="315.0" prefHeight="50.0" prefWidth="655.0" promptText="Email" unFocusColor="BLACK">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </JFXTextField>
+                <JFXTextField fx:id="contactText" focusTraversable="false" labelFloat="true" layoutX="120.0" layoutY="414.0" prefHeight="50.0" prefWidth="250.0" promptText="Contact" unFocusColor="BLACK">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </JFXTextField>
+                <JFXTextField fx:id="nationalityText" focusTraversable="false" labelFloat="true" layoutX="513.0" layoutY="414.0" prefHeight="50.0" prefWidth="250.0" promptText="Nationality" unFocusColor="BLACK">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </JFXTextField>
+                <JFXTextField fx:id="addressText" focusTraversable="false" labelFloat="true" layoutX="120.0" layoutY="513.0" prefHeight="50.0" prefWidth="655.0" promptText="Address" unFocusColor="BLACK">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </JFXTextField>
+                <JFXButton fx:id="btnNextPersonalInfo" onAction="#nextToQualification" buttonType="RAISED" focusTraversable="false" layoutX="587.0" layoutY="633.0" prefHeight="40.0" prefWidth="190.0" style="-fx-background-color: #164e98;" text="Next" textFill="WHITE">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </JFXButton>
+                <Label layoutX="250.0" layoutY="746.0" text="Resume Builder by Seemant Shekhar" textFill="#164e98">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+                <Label layoutX="120.0" layoutY="105.0" text="Personal Information" textFill="#164e98">
+                    <font>
+                        <Font name="System Bold" size="24.0" />
+                    </font>
+                </Label>
+                <Line endX="140.0" layoutX="221.0" layoutY="148.0" startX="-100.0" stroke="#164e98" />
+                <Label fx:id="resetAllPersonalInfo" onMouseClicked="#resetAll" layoutX="120.0" layoutY="640.0" text="Reset All" textFill="#164e98">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </Label>
+            </children>
+        </AnchorPane>
+        <AnchorPane fx:id="qualificationPane" layoutX="300.0" prefHeight="800.0" prefWidth="900.0">
+            <children>
+                <Label fx:id="exitLabel3" layoutX="820.0" layoutY="40.0" text="Exit" onMouseClicked="#exit" textFill="#164e98">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </Label>
+                <JFXTextField fx:id="collegeText" focusTraversable="false" labelFloat="true" layoutX="120.0" layoutY="216.0" prefHeight="50.0" prefWidth="655.0" promptText="College/University" unFocusColor="BLACK">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </JFXTextField>
+                <JFXTextField fx:id="cgpaText" focusTraversable="false" labelFloat="true" layoutX="120.0" layoutY="414.0" prefHeight="50.0" prefWidth="250.0" promptText="CGPA" unFocusColor="BLACK">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </JFXTextField>
+                <JFXTextField fx:id="gradYearText" focusTraversable="false" labelFloat="true" layoutX="513.0" layoutY="414.0" prefHeight="50.0" prefWidth="250.0" promptText="Graduation Year" unFocusColor="BLACK">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </JFXTextField>
+                <JFXButton fx:id="btnNextQualification" onAction="#nextToSkills" buttonType="RAISED" focusTraversable="false" layoutX="587.0" layoutY="633.0" prefHeight="40.0" prefWidth="190.0" style="-fx-background-color: #164e98;" text="Next" textFill="WHITE">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </JFXButton>
+                <Label layoutX="250.0" layoutY="746.0" text="Resume Builder by Seemant Shekhar" textFill="#164e98">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+                <Label layoutX="120.0" layoutY="105.0" text="Qualifications" textFill="#164e98">
+                    <font>
+                        <Font name="System Bold" size="24.0" />
+                    </font>
+                </Label>
+                <Line endX="32.0" layoutX="221.0" layoutY="148.0" startX="-100.0" stroke="#164e98" />
+                <Label fx:id="resetAllQualification"  onMouseClicked="#resetAll" layoutX="120.0" layoutY="640.0" text="Reset All" textFill="#164e98">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </Label>
+                <JFXTextField fx:id="branchText" focusTraversable="false" labelFloat="true" layoutX="122.0" layoutY="314.0" prefHeight="50.0" prefWidth="250.0" promptText="Branch" unFocusColor="BLACK">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </JFXTextField>
+                <JFXTextField fx:id="degreeText" focusTraversable="false" labelFloat="true" layoutX="515.0" layoutY="314.0" prefHeight="50.0" prefWidth="250.0" promptText="Degree" unFocusColor="BLACK">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </JFXTextField>
+                <JFXTextField fx:id="tenthText" focusTraversable="false" labelFloat="true" layoutX="120.0" layoutY="513.0" prefHeight="50.0" prefWidth="250.0" promptText="10th Percentage" unFocusColor="BLACK">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </JFXTextField>
+                <JFXTextField fx:id="twelfthText" focusTraversable="false" labelFloat="true" layoutX="513.0" layoutY="513.0" prefHeight="50.0" prefWidth="250.0" promptText="12th Percentage" unFocusColor="BLACK">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </JFXTextField>
+            </children>
+        </AnchorPane>
+        <AnchorPane fx:id="skillsPane" layoutX="300.0" prefHeight="800.0" prefWidth="900.0" >
+            <children>
+                <Label fx:id="exitLabel2" layoutX="820.0" layoutY="40.0" text="Exit" onMouseClicked="#exit" textFill="#164e98">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </Label>
+                <JFXTextField fx:id="skillsText" focusTraversable="false" labelFloat="true" layoutX="120.0" layoutY="216.0" prefHeight="50.0" prefWidth="655.0" promptText="Skills (Separate by comma)" unFocusColor="BLACK">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </JFXTextField>
+                <JFXButton fx:id="btnGenerate" onAction="#generateResume" buttonType="RAISED" focusTraversable="false" layoutX="568.0" layoutY="633.0" prefHeight="40.0" prefWidth="209.0" style="-fx-background-color: #164e98;" text="Generate Resume" textFill="WHITE">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </JFXButton>
+                <Label layoutX="250.0" layoutY="746.0" text="Resume Builder by Seemant Shekhar" textFill="#164e98">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+                <Label layoutX="120.0" layoutY="105.0" text="Skills &amp; Experience" textFill="#164e98">
+                    <font>
+                        <Font name="System Bold" size="24.0" />
+                    </font>
+                </Label>
+                <Line endX="92.0" layoutX="221.0" layoutY="148.0" startX="-100.0" stroke="#164e98" />
+                <Label fx:id="resetAllSkills"  onMouseClicked="#resetAll" layoutX="120.0" layoutY="640.0" text="Reset All" textFill="#164e98">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </Label>
+                <JFXTextField fx:id="linkedinText" focusTraversable="false" labelFloat="true" layoutX="120.0" layoutY="513.0" prefHeight="50.0" prefWidth="250.0" promptText="Linkedin Profile" unFocusColor="BLACK">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </JFXTextField>
+                <JFXTextField fx:id="githubText" focusTraversable="false" labelFloat="true" layoutX="513.0" layoutY="513.0" prefHeight="50.0" prefWidth="250.0" promptText="Github Profile" unFocusColor="BLACK">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </JFXTextField>
+                <JFXTextField fx:id="experienceText" focusTraversable="false" labelFloat="true" layoutX="120.0" layoutY="314.0" prefHeight="50.0" prefWidth="655.0" promptText="Experience (Separate by comma)" unFocusColor="BLACK">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </JFXTextField>
+                <JFXTextField fx:id="achievementsText" focusTraversable="false" labelFloat="true" layoutX="126.0" layoutY="413.0" prefHeight="50.0" prefWidth="655.0" promptText="Awards &amp; Achievements (Separate by comma)" unFocusColor="BLACK">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </JFXTextField>
+            </children>
+        </AnchorPane>
+
+
+    </children>
+
+</AnchorPane>
